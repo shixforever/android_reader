@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shixforever.reader"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" >
+    </uses-permission>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.shixforever.reader.activity.BookShelfActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.ImageBrowseActivity" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.AlbumMakeActivity" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.FolderListActivity" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.PictureListActivity" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.AlbumSettingActivity" >
+        </activity>
+        <activity android:name="com.shixforever.reader.activity.BookActivity" />
+        <activity
+            android:name="com.shixforever.reader.activity.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- youmi -->
+        <service
+            android:name="net.youmi.android.YoumiService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="net.youmi.android.YoumiActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+
+        <receiver android:name="net.youmi.android.YoumiReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

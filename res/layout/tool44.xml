@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool44"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="@drawable/tool44" >
+
+    <TextView
+        android:id="@+id/markEdit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:textSize="20dip" >
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        android:layout_width="270dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dip"
+        android:gravity="center"
+        android:max="100" >
+    </SeekBar>
+
+    <ImageButton
+        android:id="@+id/imageBtn4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="120dip"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tool4_1" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageBtn4_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dip"
+        android:layout_marginTop="120dip"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/tool4_2" >
+    </ImageButton>
+
+</RelativeLayout>

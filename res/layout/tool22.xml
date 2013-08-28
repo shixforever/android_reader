@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool22"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:background="@drawable/tool22" >
+
+    <ImageButton
+        android:id="@+id/imageBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dip"
+        android:layout_marginTop="30dip"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/reader_switch_off" >
+    </ImageButton>
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dip"
+        android:max="10" >
+    </SeekBar>
+
+</RelativeLayout>

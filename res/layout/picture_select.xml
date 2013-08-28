@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/file_list_bg"
+	android:cacheColorHint="#00000000"
+>
+	<include layout="@layout/head"></include>
+	<RelativeLayout
+		android:id="@+id/linearLayout1"
+		android:layout_height="fill_parent"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+	>
+		<GridView
+			android:horizontalSpacing="5dp"
+			android:verticalSpacing="5dp"
+			android:layout_height="fill_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/gridView1"
+			android:numColumns="3"
+			android:cacheColorHint="#00000000"
+		></GridView>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="78dp"
+			android:background="#55333333"
+			android:layout_alignParentBottom="true"
+		>
+			<Gallery
+				android:id="@+id/glImages"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:spacing="5dp"
+			></Gallery>
+		</LinearLayout>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="48dp"
+		android:background="@drawable/bottom_bg_n"
+	>
+		<Button
+			android:id="@+id/btComplite"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:background="@drawable/ef_next_bt"
+			android:gravity="center|left"
+			android:text="完成选择"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:paddingLeft="30dp"
+			android:layout_centerInParent="true"
+		></Button>
+	</RelativeLayout>
+</LinearLayout>

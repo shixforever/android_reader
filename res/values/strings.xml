@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">致青春</string>
+    <string name="close">关闭</string>
+    <string name="open">打开</string>
+    <string name="copy_finish">文件准备完成</string>
+    <string name="bookpop_size">文字调整</string>
+    <string name="bookpop_light">调节亮度</string>
+    <string name="bookpop_card">设置书签</string>
+    <string name="bookpop_send">意见反馈</string>
+
+</resources>

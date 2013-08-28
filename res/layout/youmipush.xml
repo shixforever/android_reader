@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/youmi_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 背景层 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#eae7e4" >
+
+        <!-- 垂直居中层 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <!-- 广告icon -->
+            <ImageView
+                android:id="@+id/youmi_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="4dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+            />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_toRightOf="@id/youmi_icon"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp" >
+
+                <!-- push标题 -->
+                <TextView
+                    android:id="@+id/youmi_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17.6dp"
+                    android:textColor="#000"
+                />
+
+                <!-- 发布时间 -->
+                <TextView
+                    android:id="@+id/youmi_time"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3.5dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="13dp"
+                    android:textColor="#999"
+                />
+
+                <!-- push广告语 -->
+                <TextView
+                    android:id="@+id/youmi_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#666"
+                    android:textSize="13dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@id/youmi_title"
+                />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

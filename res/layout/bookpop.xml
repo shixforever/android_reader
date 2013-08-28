@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bookback"
+    android:baselineAligned="false" >
+
+    <TextView
+        android:id="@+id/bookBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_text_size"
+        android:gravity="center"
+        android:text="@string/bookpop_size" />
+
+    <TextView
+        android:id="@+id/bookBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_screen_brightness"
+        android:gravity="center"
+        android:text="@string/bookpop_light" />
+
+    <TextView
+        android:id="@+id/bookBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_bookmark_operation"
+        android:gravity="center"
+        android:text="@string/bookpop_card" />
+
+    <TextView
+        android:id="@+id/bookBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_jump_to"
+        android:gravity="center"
+        android:text="@string/bookpop_send" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/file_list_bg"
+>
+	<include layout="@layout/head"></include>
+	<GridView
+		android:id="@+id/gvImageSelected"
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:numColumns="3"
+		android:horizontalSpacing="5dp"
+		android:cacheColorHint="#00000000"
+		android:verticalSpacing="5dp"
+	></GridView>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="80dp"
+		android:gravity="center|left"
+		android:padding="5dp"
+		android:background="@drawable/bottom_bg1"
+		android:orientation="vertical"
+	>
+		<Button
+			android:id="@+id/btAdd"
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:background="@drawable/ef_add_bt"
+			android:gravity="center"
+			android:text="添加照片"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:layout_marginLeft ="40dp"
+		></Button>
+		<Button
+			android:id="@+id/btNext"
+			android:layout_width="wrap_content"
+			android:layout_height="35dp"
+			android:background="@drawable/ef_next_bt"
+			android:gravity="center|left"
+			android:text="下一步"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:paddingLeft="30dp"
+			android:layout_marginLeft ="100dp"
+		></Button>
+	</LinearLayout>
+</LinearLayout>

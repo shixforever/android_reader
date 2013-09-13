@@ -17,4 +17,31 @@
             android:textColor="#ffffff"
             android:textSize="20dp"
             android:textStyle="bold" />
-    </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_jfq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="推荐" />
+
+        <TextView
+            android:id="@+id/tv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="0分"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/bt_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bt_jfq"
+            android:text="列表" />
+	
+    </RelativeLayout>	

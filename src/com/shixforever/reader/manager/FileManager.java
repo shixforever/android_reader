@@ -25,6 +25,8 @@ public class FileManager {
 	private static FileManager manager = null;
 	public static final String IMAGE_SDCARD_PATH = Environment
 			.getExternalStorageDirectory() + "/focustech/typ/image/";
+	public static final String FILE_SDCARD_PATH = Environment
+			.getExternalStorageDirectory().getPath() + "/reader/novels/";
 
 	private FileManager() {
 

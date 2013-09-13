@@ -541,7 +541,7 @@ public class PageWidget extends View {
 		}
 	}
 
-	private void startAnimation(int delayMillis) {
+	public void startAnimation(int delayMillis) {
 		int dx, dy;
 		// dx 水平方向滑动的距离，负值会使滚动向左滚动
 		// dy 垂直方向滑动的距离，负值会使滚动向上滚动

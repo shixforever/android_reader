@@ -413,7 +413,10 @@ public class BookPageFactory
 	{
 		return m_lines.size() > 0 ? m_lines.get(0) : "";
 	}
-
+	public String getSecLineText()
+	{
+		return m_lines.size() > 0 ? m_lines.get(1) : "";
+	}
 	public void setM_fontSize(int m_fontSize)
 	{
 		this.m_fontSize = m_fontSize;
@@ -429,5 +432,9 @@ public class BookPageFactory
 	{
 		return m_mbBufLen;
 	}
-
+	public void turnMark()
+	{
+		m_lines.clear();
+		m_lines = pageDown(true);
+	}
 }

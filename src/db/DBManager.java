@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.shixforever.reader.data.BookFile;
+import com.shixforever.reader.module.BookMark;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -26,15 +27,27 @@ public class DBManager {
 	 * @param persons
 	 */
 	public void add(List<BookFile> persons) {
-		db.beginTransaction(); 
+		db.beginTransaction();
 		try {
 			for (BookFile person : persons) {
 				db.execSQL("INSERT INTO wowskill VALUES(null, ?, ?)",
 						new Object[] { person.name, person.file });
 			}
-			db.setTransactionSuccessful(); 
+			db.setTransactionSuccessful();
 		} finally {
-			db.endTransaction(); 
+			db.endTransaction();
+		}
+	}
+
+	public void addMarks(BookMark mark) {
+		db.beginTransaction();
+		try {
+			db.execSQL("INSERT INTO marks VALUES(null, ?, ?,?)", new Object[] {
+					mark.begin, mark.word, mark.name });
+			db.setTransactionSuccessful();
+		} finally {
+
+			db.endTransaction();
 		}
 	}
 
@@ -50,12 +63,12 @@ public class DBManager {
 	}
 
 	/**
-	 * delete old person
+	 * delete book 
 	 * 
 	 * @param person
 	 */
-	public void deleteOldPerson(BookFile person) {
-		db.delete("wowskill", "name = ?",
+	public void deleteBook(BookFile person) {
+		db.delete("story", "name = ?",
 				new String[] { String.valueOf(person.name) });
 	}
 
@@ -87,7 +100,23 @@ public class DBManager {
 			book.id = c.getInt(c.getColumnIndex("id"));
 			book.name = c.getString(c.getColumnIndex("name"));
 			book.file = c.getBlob(c.getColumnIndex("file"));
-			book.cover=c.getString(c.getColumnIndex("cover"));
+			book.cover = c.getString(c.getColumnIndex("cover"));
+			book.flag= c.getString(c.getColumnIndex("flag"));
+			books.add(book);
+		}
+		c.close();
+		return books;
+	}
+
+	public ArrayList<BookMark> queryMarks(String name) {
+		// List<Profession> professions = new ArrayList<Profession>();
+		ArrayList<BookMark> books = new ArrayList<BookMark>();
+		Cursor c = queryTheCursor("marks", name);
+		while (c.moveToNext()) {
+			BookMark book = new BookMark();
+			book.id = c.getInt(c.getColumnIndex("id")) + "";
+			book.begin = c.getInt(c.getColumnIndex("begin"));
+			book.word = c.getString(c.getColumnIndex("word"));
 			books.add(book);
 		}
 		c.close();

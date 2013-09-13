@@ -53,8 +53,21 @@ public class AlbumShelfAdapter extends BaseAdapter {
 		}
 		tvAlbumName = (TextView) convertView.findViewById(R.id.tvAlbumName);
 		BookFile album = albums.get(position);
-		tvAlbumName.setBackgroundResource(FileTools.getResource(context,
-				album.cover));
+		if (album.flag.equals("1")) {
+			tvAlbumName.setBackgroundResource(R.drawable.cover_txt);
+			tvAlbumName.setText(album.name);
+		} else if (album.cover.equals("0")) {
+			tvAlbumName.setBackgroundResource(R.drawable.cover_txt);
+			tvAlbumName.setText(album.name);
+		} else {
+			tvAlbumName.setBackgroundResource(FileTools.getResource(context,
+					album.cover));
+		}
 		return convertView;
+	}
+
+	public void change(List<BookFile> album) {
+		this.albums = album;
+		notifyDataSetChanged();
 	}
 }

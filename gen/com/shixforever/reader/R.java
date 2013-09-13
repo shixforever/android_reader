@@ -69,59 +69,62 @@ public final class R {
         public static final int zqc=0x7f020037;
     }
     public static final class id {
-        public static final int adLayout=0x7f050019;
-        public static final int bookBtn1=0x7f050009;
-        public static final int bookBtn2=0x7f05000a;
-        public static final int bookBtn3=0x7f05000b;
-        public static final int bookBtn4=0x7f05000c;
-        public static final int bookShelf=0x7f050018;
-        public static final int btAdd=0x7f050003;
-        public static final int btComplite=0x7f050008;
-        public static final int btNext=0x7f050004;
-        public static final int btSelectAlbumFrame=0x7f050006;
-        public static final int etAlbumName=0x7f050007;
-        public static final int file_modify=0x7f050016;
-        public static final int file_name=0x7f050015;
-        public static final int glImages=0x7f05001b;
-        public static final int gridView1=0x7f05001a;
-        public static final int gvImageSelected=0x7f050002;
-        public static final int head=0x7f050017;
-        public static final int ibDel=0x7f05001e;
-        public static final int icon=0x7f050014;
-        public static final int imageBtn2=0x7f050024;
-        public static final int imageBtn3_1=0x7f050027;
-        public static final int imageBtn3_2=0x7f050028;
-        public static final int imageBtn4_1=0x7f05002c;
-        public static final int imageBtn4_2=0x7f05002d;
-        public static final int ivAlbumFrame=0x7f050005;
-        public static final int ivFolder=0x7f05000d;
-        public static final int ivPhoto=0x7f05001d;
-        public static final int ivSlidingItem=0x7f05001f;
-        public static final int linearLayout1=0x7f05000e;
-        public static final int lvFolderList=0x7f050011;
-        public static final int markEdit4=0x7f05002a;
-        public static final int pbProgress=0x7f050012;
-        public static final int readlayout=0x7f05001c;
-        public static final int relative=0x7f050031;
-        public static final int seekBar1=0x7f050022;
-        public static final int seekBar2=0x7f050025;
-        public static final int seekBar4=0x7f05002b;
-        public static final int textView1=0x7f050000;
-        public static final int tool11=0x7f050021;
-        public static final int tool22=0x7f050023;
-        public static final int tool33=0x7f050026;
-        public static final int tool44=0x7f050029;
-        public static final int toolpopimage=0x7f05002e;
-        public static final int tvAlbumName=0x7f050001;
-        public static final int tvFolderName=0x7f050010;
-        public static final int tvFolderTitle=0x7f05000f;
-        public static final int tvSldgingItemName=0x7f050020;
-        public static final int tv_head=0x7f050013;
-        public static final int youmi_content=0x7f050034;
-        public static final int youmi_icon=0x7f050030;
-        public static final int youmi_layout=0x7f05002f;
-        public static final int youmi_time=0x7f050033;
-        public static final int youmi_title=0x7f050032;
+        public static final int adLayout=0x7f06001c;
+        public static final int bookBtn1=0x7f060009;
+        public static final int bookBtn2=0x7f06000a;
+        public static final int bookBtn3=0x7f06000b;
+        public static final int bookBtn4=0x7f06000c;
+        public static final int bookShelf=0x7f06001b;
+        public static final int btAdd=0x7f060003;
+        public static final int btComplite=0x7f060008;
+        public static final int btNext=0x7f060004;
+        public static final int btSelectAlbumFrame=0x7f060006;
+        public static final int bt_jfq=0x7f060014;
+        public static final int bt_list=0x7f060016;
+        public static final int etAlbumName=0x7f060007;
+        public static final int file_modify=0x7f060019;
+        public static final int file_name=0x7f060018;
+        public static final int glImages=0x7f06001e;
+        public static final int gridView1=0x7f06001d;
+        public static final int gvImageSelected=0x7f060002;
+        public static final int head=0x7f06001a;
+        public static final int ibDel=0x7f060021;
+        public static final int icon=0x7f060017;
+        public static final int imageBtn2=0x7f060027;
+        public static final int imageBtn3_1=0x7f06002a;
+        public static final int imageBtn3_2=0x7f06002b;
+        public static final int imageBtn4_1=0x7f06002f;
+        public static final int imageBtn4_2=0x7f060030;
+        public static final int ivAlbumFrame=0x7f060005;
+        public static final int ivFolder=0x7f06000d;
+        public static final int ivPhoto=0x7f060020;
+        public static final int ivSlidingItem=0x7f060022;
+        public static final int linearLayout1=0x7f06000e;
+        public static final int lvFolderList=0x7f060011;
+        public static final int markEdit4=0x7f06002d;
+        public static final int pbProgress=0x7f060012;
+        public static final int readlayout=0x7f06001f;
+        public static final int relative=0x7f060034;
+        public static final int seekBar1=0x7f060025;
+        public static final int seekBar2=0x7f060028;
+        public static final int seekBar4=0x7f06002e;
+        public static final int textView1=0x7f060000;
+        public static final int tool11=0x7f060024;
+        public static final int tool22=0x7f060026;
+        public static final int tool33=0x7f060029;
+        public static final int tool44=0x7f06002c;
+        public static final int toolpopimage=0x7f060031;
+        public static final int tvAlbumName=0x7f060001;
+        public static final int tvFolderName=0x7f060010;
+        public static final int tvFolderTitle=0x7f06000f;
+        public static final int tvSldgingItemName=0x7f060023;
+        public static final int tv_head=0x7f060013;
+        public static final int tv_points=0x7f060015;
+        public static final int youmi_content=0x7f060037;
+        public static final int youmi_icon=0x7f060033;
+        public static final int youmi_layout=0x7f060032;
+        public static final int youmi_time=0x7f060036;
+        public static final int youmi_title=0x7f060035;
     }
     public static final class layout {
         public static final int album_browse=0x7f030000;
@@ -155,5 +158,23 @@ public final class R {
         public static final int close=0x7f040001;
         public static final int copy_finish=0x7f040003;
         public static final int open=0x7f040002;
+    }
+    public static final class style {
+        /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+         */
+        public static final int AppBaseTheme=0x7f050000;
+        /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+         */
+        public static final int AppTheme=0x7f050001;
+        public static final int Transparent=0x7f050002;
     }
 }
